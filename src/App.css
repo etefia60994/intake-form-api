@@ -35,4 +35,9 @@
   to {
     transform: rotate(360deg);
   }
+ 
+}
+input[type="submit"]{
+  float:right;
+  padding-right: 15px;
 }
