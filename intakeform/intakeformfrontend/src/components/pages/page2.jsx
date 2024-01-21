@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from 'react-bootstrap/Navbar'
+import { Navbar } from 'reactstrap';
 class Resource extends Component {
 
     state = {  

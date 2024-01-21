@@ -22,12 +22,7 @@ import java.util.stream.Collectors;
 public class ServiceProvider extends AbstractContactInfo {
 
     @Getter @Setter
-    @NotBlank
     private String serviceProviderName;
-
-    @Getter @Setter
-    @Email
-    private String email;
 
     @ManyToMany(mappedBy = "serviceProviders")
     private final List<Client> clients = new ArrayList<>();

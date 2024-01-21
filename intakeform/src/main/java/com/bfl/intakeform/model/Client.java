@@ -57,5 +57,6 @@ public class Client extends AbstractContactInfo {
     @ManyToMany
     private final List<ServiceProvider> serviceProviders = new ArrayList<>();
 
+    private ClientHouseholdInfo householdInfo;
 
 }

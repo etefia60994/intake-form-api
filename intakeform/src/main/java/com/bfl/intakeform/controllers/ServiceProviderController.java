@@ -12,6 +12,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Optional;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api")
 public class ServiceProviderController {
@@ -39,7 +40,7 @@ public class ServiceProviderController {
     }
 
 
-
+    @CrossOrigin
     @PostMapping("/serviceProvider")
     ResponseEntity<ServiceProvider> createServiceProvider(@Valid @RequestBody ServiceProvider serviceProvider) throws URISyntaxException {
         ServiceProvider result= serviceProviderRepository.save(serviceProvider);
